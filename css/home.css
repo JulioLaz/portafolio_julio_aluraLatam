@@ -59,15 +59,15 @@ button{
 }
 .experience__repo:hover{
     cursor: pointer;
-    box-shadow: 0 0 5px 5px grey;
+    box-shadow: 0 0 5px 5px #1c55a0;
 }
 .experience__demo:hover{
     cursor: pointer;
-    box-shadow: 0 0 5px 5px grey;
+    box-shadow: 0 0 5px 5px #1c55a0;
 }
 .formcontato__botao:hover{
     cursor: pointer;
-    box-shadow: 0 0 5px 5px grey;
+    box-shadow: 0 0 5px 5px 1c55a0;
 }
 
 p{
@@ -159,6 +159,9 @@ section.menu{
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+.menu__list__item:hover{
+    border-bottom: 2px solid rgb(75, 75, 227);
 }
 .menu__list__item__hidden{
     display:none !important;
