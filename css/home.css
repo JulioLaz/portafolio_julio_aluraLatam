@@ -1,0 +1,958 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   display: flex;
+
+   flex-direction: column;
+align-items: center;
+padding: 0px;
+/* gap: 32px; */
+
+position: absolute;
+/* height: 5120px; */
+left: 0%;
+right: 0%;
+top: 0px;
+}
+html{
+position: relative;
+background: #757373;
+
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    position: relative;
+    /* width: 1440px; */
+    /* height: 5020px; */
+    background: #a3a1a1;
+}
+ol, ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background-color: inherit;
+}
+p{
+    margin: 0;
+}
+section{
+    margin: 0;
+    padding: 0;
+}
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+nav li{
+    display: inline;
+}
+
+.caja__menu{
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    background-color: #88a2c6;
+    position: fixed;    
+}
+section.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1136px;
+    height: 88px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.menu__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: auto;
+    height: 24px;
+}
+.menu__img{
+    width: 24px;
+    height: 24px;
+}
+.menu__title{
+    width: auto;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.menu__ul__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 653px;
+    height: 19px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.menu__list__item{
+    width: auto;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.menu__list__item__hidden{
+    display:none !important;
+    width: auto;
+
+}
+
+/*Sección Title*/
+
+section.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: calc(88px + 2rem);
+    padding-bottom: 2rem;
+    gap: 208px;
+    width: 1440px;
+    height: 368px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 88px;
+    width: 1136px;
+    height: 368px;
+}
+.title__profile{
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 751px;
+    height: 246px;
+}
+.title__network{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 467px;
+    height: 24px;
+}
+
+/*Sección About*/
+
+section.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 1440px;
+    height: auto;
+    background: #EAF2FD;
+    padding: 3rem 0;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.about__paragraph{
+    text-align: justify;
+}
+
+/* Sección Skills hobbies Academic */
+
+.skills__hobbies__academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 66px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Sección Skills */
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.skills__title{
+    width: 82px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* padding: 0px 1.5rem; */
+    gap: 16px;
+    width: 1440px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.skills__img{
+    width: 24px;
+    height: 37px;
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2A7AE4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.skills__name{
+    width: 144px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.hobbies__title{
+    width: 82px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0px;
+    gap: 16px;
+    width: 1440px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.hobbies__img{
+    width: 24px;
+    height: 37px;
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2A7AE4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.hobbies__name{
+    width: 144px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 1440px;
+    height: 581px;
+    background: #EAF2FD;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.academic__title{
+    width: 339px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 347px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 368px;
+    height: 347px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.academic__courses__item__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 368px;
+    height: 286px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.academic__courses__item__img__AP{
+    width: 360px;
+    height: auto;
+}
+
+.academic__courses__item__title{
+    height: 26px;
+    margin-top: 1.5rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.academic__courses__item__subtitle{
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* experiencia*/
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0px;
+    gap: 32px;
+    width: 1440px;
+    height: 1886px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+.experiencie__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+    width: 1136px;
+    height: 406px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.experiencie__box__reverse{
+    flex-direction: row-reverse;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 300px;
+    height: 112px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.experience__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.experience__text{
+    width: 368px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 560px;
+    height: 51px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.experience__repo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 116px;
+    height: 51px;
+    border-radius: 5px;
+    border: 1px solid #2A7AE4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.experience__demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    border-radius: 5px;
+    background: #2A7AE4;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.experiencia__botao__repo{
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.experience__botao__demo{
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*Contacto*/
+
+section.formcontato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1440px;
+    flex: none;
+    flex-grow: 0;
+}
+.formcontato__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 1440px;
+    height: 788px;
+    background: #EAF2FD;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.formcontato__contacto__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 660px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
+    height: 596px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.formcontacto__text__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 656px;
+    height: 84px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.formcontato__title{
+    width: 141px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.formcontato__subtext{
+    width: 656px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 31px;
+    width: 656px;
+    height: 397px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.formcontato__form__box{
+    display: flex;
+    justify-content: center;
+    width: 656px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.formcontato__form__linea{
+    position: absolute;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    top: 55px;
+    background: #C8C8C8;
+}
+.formcontato__form__label{
+    width: 632px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.formcontato__form__label__email{
+    width: 632px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #2A7AE4;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.formcontato__input__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 632px;
+    height: 20px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    border: none;
+}
+.formcontato__input{
+    width: 100%;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    border: none;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.formcontato__input__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 632px;
+    height: 20px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.formcontato__form__box__label__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formcontato__form__box__textarea{
+    display: flex;
+    align-items: center;
+    width: 656px;
+    height: 133px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.formcontato__input__box__textarea{
+    width: 100%;
+    height: 103px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 12px;
+}
+.formcontato__textarea{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    border: none;
+}
+.formcontato__botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border-radius: 5px;
+}
+.formcontato__botao__span{
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+     flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*footeer*/
+
+section.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1440px;
+    height: 102px;
+    background: #88a2c6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.footer__rodape{
+    width: auto;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
