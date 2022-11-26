@@ -55,7 +55,21 @@ h1, h2, h3, h4{
 button{
     border: none;
     background-color: inherit;
+    cursor: pointer;
 }
+.experience__repo:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px grey;
+}
+.experience__demo:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px grey;
+}
+.formcontato__botao:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px grey;
+}
+
 p{
     margin: 0;
 }
