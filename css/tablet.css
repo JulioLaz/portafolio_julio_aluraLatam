@@ -6,7 +6,7 @@
    div.tudo{
        position: relative;
        width: 768px;
-       height: 4379px;
+       height: auto;
        background: #F5F5F5;
    }
    .caja__menu{

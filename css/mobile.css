@@ -502,6 +502,7 @@ section.experience{
 }
 .experience__img{
    width: 320px;
+   height: auto;
 }
 .experiencie__box__reverse{
    flex-direction: column;
