@@ -1,16 +1,16 @@
 /*Mobile*/
-@media (max-width: 360px) {
+@media (max-width: 450px) {
 
    div.tudo{
        position: relative;
-       width: 360px;
-       height: 4379px;
+       width: 450px;
+       height: auto;
        background: #F5F5F5;
    }
    .caja__menu{
        display: flex;
        justify-content: center;
-       width: 360px;
+       width: 450px;
        background-color: #28df18;
        /* background-color: #EAF2FD; */
        position: fixed;
@@ -21,7 +21,7 @@
        flex-direction: row;
        justify-content: space-between;
        align-items: center;
-       width: 320px;
+       width: 400px;
        height: 56px;
        flex: none;
        order: 0;
@@ -71,7 +71,7 @@ section.title{
    align-items: center;
    padding-top: calc(56px + 1rem);
    padding-bottom: 1rem;
-   width: 360px;
+   width: 450px;
    height: auto;
    flex: none;
    order: 1;
@@ -83,7 +83,7 @@ section.title{
    /* justify-content: space-between; */
    align-items: flex-start;
    padding: 0px;
-   width: 320px;
+   width: 400px;
    height: auto;
 }
 .title__container{
@@ -92,7 +92,7 @@ section.title{
    align-items: flex-start;
    padding: 0px;
    gap: 8px;
-   width: 360px;
+   width: 450px;
    height: auto;
    flex: none;
    order: 0;
@@ -103,7 +103,7 @@ section.title{
    height: 146px;
 }
 .title__bio{
-   width: 320px;
+   width: 400px;
    height: 52px;
    font-family: 'Raleway';
    font-style: normal;
@@ -118,7 +118,7 @@ section.title{
    flex-grow: 0;
 }
 .title__subsection{
-   width: 320px;
+   width: 400px;
    height: auto;
    font-family: 'Raleway';
    font-style: normal;
@@ -138,7 +138,7 @@ section.title{
    align-items: flex-start;
    padding: 0px;
    gap: 32px;
-   width: 320px;
+   width: 400px;
    height: 24px;
    font-size: 12px;
    font-weight: 600;
@@ -151,7 +151,7 @@ section.about{
    flex-direction: column;
    align-items: center;
    gap: 10px;
-   width: 360px;
+   width: 450px;
    height: auto;
    background: #EAF2FD;
    flex: none;
@@ -165,7 +165,7 @@ section.about{
    align-items: flex-start;
    padding: 1rem 0;
    gap: 16px;
-   width: 320px;
+   width: 400px;
    height: auto;
    flex: none;
    order: 0;
@@ -173,7 +173,7 @@ section.about{
 }
 .about__paragraph{
    text-align: justify;
-   width: 320px;
+   width: 400px;
    height: auto;
    font-family: 'Raleway';
    font-style: normal;
@@ -206,7 +206,7 @@ section.skills{
    padding-top: 3rem;
    gap: 32px;
    flex: none;
-   width: 360px;
+   width: 450px;
    height: auto;
    order: 0;
    align-self: stretch;
@@ -230,10 +230,10 @@ section.skills{
    display: flex;
    flex-direction: row;
    align-items: flex-start;
-   justify-content: space-between;
+   justify-content: space-evenly;
    padding: 0px;
    gap: 16px;
-   width: 320px;
+   width: 400px;
    flex: none;
    order: 1;
    flex-wrap: wrap;
@@ -317,10 +317,10 @@ section.hobbies{
    display: flex;
    flex-direction: row;
    align-items: flex-start;
-   justify-content: space-between;
+   justify-content: space-evenly;
    padding: 0px;
    gap: 16px;
-   width: 320px;
+   width: 400px;
    flex: none;
    order: 1;
    flex-wrap: wrap;
@@ -380,7 +380,7 @@ section.academic{
    align-items: center;
    justify-content: center;
    gap: 1rem;
-   width: 360px;
+   width: 450px;
    height: auto;
    background: #EAF2FD;
    flex: none;
@@ -410,7 +410,7 @@ section.academic{
    justify-content: center;
    padding: 0px;
    gap: 16px;
-   width: 320px;
+   width: 400px;
    height: auto;
    flex: none;
    order: 2;
@@ -422,14 +422,14 @@ section.academic{
    align-items: flex-start;
    padding: 0px;
    gap: 8px;
-   width: 320px;
+   width: 400px;
    height: 260px;
    flex: none;
    order: 2;
    flex-grow: 0;
 }
 .academic__courses__list{
-   width: 320px;
+   width: 400px;
 }
 .academic__courses__item__img{
    display: flex;
@@ -437,7 +437,7 @@ section.academic{
    justify-content: center;
    align-items: center;
    gap: 10px;
-   width: 320px;
+   width: 400px;
    height: 200px;
    background: #FFFFFF;
    flex: none;
@@ -481,7 +481,7 @@ section.experience{
    margin-top: 3rem;
    padding: 0px;
    gap: 0px;
-   width: 360px;
+   width: 450px;
    height: auto;
    flex: none;
    order: 4;
@@ -494,14 +494,14 @@ section.experience{
    padding: 0px;
    margin-top: 2rem;
    gap: 16px;
-   width: 320px;
+   width: 400px;
    height: auto;
    flex: none;
    order: 0;
    flex-grow: 0;
 }
 .experience__img{
-   width: 320px;
+   width: 400px;
    height: auto;
 }
 .experiencie__box__reverse{
@@ -637,7 +637,7 @@ section.formcontato{
    flex-direction: column;
    align-items: flex-start;
    padding: 0px;
-   width: 360px;
+   width: 450px;
    flex: none;
    flex-grow: 0;
    margin-top: 1.5rem;
@@ -650,7 +650,7 @@ section.formcontato{
    flex-direction: column;
    align-items: center;
    gap: 10px;
-   width: 360px;
+   width: 450px;
    height: auto;
    background: #EAF2FD;
    flex: none;
@@ -664,7 +664,7 @@ section.formcontato{
    align-items: center;
    padding:16px 0;
    gap: 16px;
-   width: 360px;
+   width: 450px;
    height: auto;
    flex: none;
    order: 0;
@@ -676,7 +676,7 @@ section.formcontato{
    align-items: flex-start;
    padding: 0px;
    gap: 32px;
-   width: 320px;
+   width: 400px;
    height: auto;
    flex: none;
    order: 1;
@@ -688,7 +688,7 @@ section.formcontato{
    align-items: flex-start;
    padding: 0px;
    gap: 0px;
-   width: 320px;
+   width: 400px;
    height: 84px;
    flex: none;
    order: 0;
@@ -726,7 +726,7 @@ section.formcontato{
    align-items: flex-start;
    padding: 0px;
    gap: 31px;
-   width: 320px;
+   width: 400px;
    height: 397px;
    flex: none;
    order: 0;
@@ -737,7 +737,7 @@ section.formcontato{
 .formcontato__form__box{
    display: flex;
    justify-content: center;
-   width: 320px;
+   width: 400px;
    height: 56px;
    background: #FFFFFF;
    border-radius: 4px;
@@ -841,7 +841,7 @@ section.formcontato{
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 320px;
+   width: 400px;
    height: 133px;
    background: #FFFFFF;
    border-radius: 4px;
@@ -911,7 +911,7 @@ section.footer{
    justify-content: center;
    align-items: center;
    gap: 10px;
-   width: 1440px;
+   width: 450px;
    height: 102px;
    background: #FFFFFF;
    flex: none;

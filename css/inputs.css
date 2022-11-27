@@ -73,7 +73,7 @@
   display: block;
 position: absolute;
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .input-container--invalid .input-message-error {
     color: var(--warning-color);
     display: block;
