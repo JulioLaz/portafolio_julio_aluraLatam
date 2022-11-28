@@ -11,7 +11,7 @@
        display: flex;
        justify-content: center;
        width: 450px;
-       background-color: #28df18;
+       background-color: #88a2c6;
        /* background-color: #EAF2FD; */
        position: fixed;
 
@@ -104,11 +104,12 @@ section.title{
 }
 .title__bio{
    width: 400px;
-   height: 52px;
+   height: 22px;
+   margin-top: 1rem;
    font-family: 'Raleway';
    font-style: normal;
    font-weight: 700;
-   font-size: 18px;
+   font-size: 15px;
    text-align: justify;
    line-height: 26px;
    color: #464646;
@@ -119,7 +120,7 @@ section.title{
 }
 .title__subsection{
    width: 400px;
-   height: auto;
+   height: 14px;
    font-family: 'Raleway';
    font-style: normal;
    font-weight: 400;
@@ -135,8 +136,9 @@ section.title{
 .title__network{
    display: flex;
    flex-direction: row;
-   align-items: flex-start;
-   padding: 0px;
+   align-items: center;
+   justify-content: space-evenly;
+   padding-top: 2rem;
    gap: 32px;
    width: 400px;
    height: 24px;
@@ -158,6 +160,7 @@ section.about{
    order: 2;
    align-self: stretch;
    flex-grow: 0;
+   padding: 2rem 0;
 }
 .about__container{
    display: flex;
@@ -673,7 +676,7 @@ section.formcontato{
 .formcontato__text{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    padding: 0px;
    gap: 32px;
    width: 400px;
@@ -745,6 +748,8 @@ section.formcontato{
    order: 0;
    align-self: stretch;
    flex-grow: 0;
+   padding-left: 1rem;
+   align-items: flex-start;
 }
 .formcontato__form__linea{
    position: absolute;

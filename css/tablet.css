@@ -13,7 +13,7 @@
        display: flex;
        justify-content: center;
        width: 768px;
-       background-color: #920d73;
+       background-color: #88a2c6;
        /* background-color: #EAF2FD; */
        position: fixed;
 
@@ -73,11 +73,10 @@ section.title{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   padding: 0;
-   padding-top: 56px;
-   /* gap: 208px; */
+   padding-top: calc(52px + 2rem);
+   padding-bottom:2rem;
    width: 768px;
-   height: 200px;
+   height: auto;
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -86,34 +85,33 @@ section.title{
    display: flex;
    flex-direction: row-reverse;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    padding: 0px;
    width: 700px;
-   height: 200px;
+   height: auto;
 }
 .title__container{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   padding: 0px;
    gap: 8px;
-   width: 524px;
-   height: 130px;
+   width: 500px;
+   height: auto;
    flex: none;
    order: 0;
    flex-grow: 0;
 }
 .title__profile{
-   width: 146px;
-   height: 146px;
+   width: 200px;
+   height: auto;
 }
 .title__bio{
    width: 524px;
-   height: 52px;
+   height: 28px;
    font-family: 'Raleway';
    font-style: normal;
    font-weight: 700;
-   font-size: 22px;
+   font-size: 18px;
    line-height: 26px;
    color: #464646;
    flex: none;
@@ -123,7 +121,7 @@ section.title{
 }
 .title__subsection{
    width: 524px;
-   height: 38px;
+   height: 18px;
    font-family: 'Raleway';
    font-style: normal;
    font-weight: 400;
@@ -139,7 +137,7 @@ section.title{
    display: flex;
    flex-direction: row;
    align-items: flex-start;
-   padding: 0px;
+   padding-top: 02rem;
    gap: 32px;
    width: 467px;
    height: 24px;
@@ -151,11 +149,11 @@ section.about{
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* padding: 32px; */
+   padding: 3.5rem 0;
    gap: 10px;
    
    width: 768px;
-   height: 286px;
+   height: auto;
    background: #EAF2FD;
    flex: none;
    order: 2;
@@ -168,9 +166,8 @@ section.about{
    align-items: flex-start;
    padding: 0px;
    gap: 16px;
-   
    width: 704px;
-   height: 222px;
+   height: auto;
    flex: none;
    order: 0;
    flex-grow: 0;
